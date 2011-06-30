@@ -1,0 +1,30 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    diff-lcs (1.1.2)
+    json (1.5.3)
+    mime-types (1.16)
+    monster_mash (0.2.3)
+      typhoeus (>= 0.2.4)
+      typhoeus (>= 0.2.4)
+    rspec (2.6.0)
+      rspec-core (~> 2.6.0)
+      rspec-expectations (~> 2.6.0)
+      rspec-mocks (~> 2.6.0)
+    rspec-core (2.6.4)
+    rspec-expectations (2.6.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.6.0)
+    typhoeus (0.2.4)
+      mime-types
+      mime-types
+    typhoeus_spec_cache (0.2.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  json
+  monster_mash (>= 0.1.1)
+  rspec (>= 1.2.9)
+  typhoeus_spec_cache (>= 0.2.2)

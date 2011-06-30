@@ -9,6 +9,10 @@ require 'alchemy_api/concept_tagging'
 require 'alchemy_api/language_detection'
 require 'alchemy_api/term_extraction'
 require 'alchemy_api/text_extraction'
+require 'alchemy_api/sentiment_detection'
+require 'alchemy_api/entity_detection'
+require 'alchemy_api/content_scraping'
+
 
 module AlchemyApi
   @api_key = nil
