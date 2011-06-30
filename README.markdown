@@ -9,13 +9,13 @@ Supported
 * Language detection from text/html/URL
 * Keyword extraction from text/html/URL
 * Text extraction from text/html/URL
+* Entity extraction from text/html/URL
+* Content scraping from html/URL
 
 Not supported
 -------------
 Currently the following APIs are not supported yet:
 
-* Entity extraction (in progress on branch entities)
-* Content scraping
 * Microformats
 * RSS/ATOM feed detecion
 
@@ -28,7 +28,7 @@ Note on Patches/Pull Requests
   future version unintentionally.
 * Commit, do not mess with rakefile, version, or history.
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+* Send David Balatero a pull request. Bonus points for topic branches.
 
 Copyright
 ---------
