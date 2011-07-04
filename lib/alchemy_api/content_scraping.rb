@@ -25,7 +25,6 @@ module AlchemyApi
 
     def self.get_content_handler(response)
       json = get_json(response)
-      debugger
       ScrapingResult.new(json['status'], json['queryResults'])
     end
   end

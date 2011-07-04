@@ -8,7 +8,8 @@ module AlchemyApi
       params :url => url,
              :sourceText => options[:source_text] || 'cleaned_or_raw',
              :cquery => options[:cquery],
-             :xpath => options[:xpath]
+             :xpath => options[:xpath],
+             :maxRetrieve => options[:limit]
       handler do |response|
         AlchemyApi::EntityDetection.get_entity_handler(response)
       end
@@ -20,6 +21,7 @@ module AlchemyApi
       params :html => html,
              :url => options[:url],
              :sourceText => options[:source_text] || 'cleaned_or_raw',
+             :maxRetrieve => options[:limit],
              :cquery => options[:cquery],
              :xpath => options[:xpath]
       handler do |response|
@@ -31,6 +33,7 @@ module AlchemyApi
       options = args.first || {}
       uri "#{AlchemyApi.base_text_uri}/TextGetRankedNamedEntities"
       params :text => text,
+             :maxRetrieve => options[:limit],
              :url => options[:url]
       handler do |response|
         AlchemyApi::EntityDetection.get_entity_handler(response)
@@ -38,7 +41,6 @@ module AlchemyApi
     end
 
     def self.get_entity_handler(response)
-      debugger
       json = get_json(response)
       EntityResult.new(json['entities'])
     end
