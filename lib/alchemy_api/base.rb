@@ -30,6 +30,8 @@ module AlchemyApi
           raise InvalidHtmlError, "The HTML sent was invalid!"
         when 'content-is-empty'
           raise ContentIsEmptyError, "The content you provided was empty!"
+        when 'cannot-retrieve:operation-timeout:cannot-resolve-dns'
+          raise URLError, "Cannot locate URL"
         else
           raise UnknownError, "Got an unknown error: #{json['statusInfo']}"
         end
