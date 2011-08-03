@@ -33,7 +33,7 @@ module AlchemyApi
         when 'cannot-retrieve:operation-timeout:cannot-resolve-dns'
           raise URLError, "Cannot locate URL"
         else
-          raise UnknownError, "Got an unknown error: #{json['statusInfo']}"
+          # raise UnknownError, "Got an unknown error: #{json['statusInfo']}"
         end
       end
     end

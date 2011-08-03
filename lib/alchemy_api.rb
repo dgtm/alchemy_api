@@ -27,7 +27,6 @@ module AlchemyApi
     attr_accessor :base_text_uri
   end
 
-  class UnknownError < StandardError; end
   class InvalidApiKeyError < StandardError; end
   class CannotRetrieveUrlError < StandardError; end
   class RedirectionLimitError < CannotRetrieveUrlError; end
