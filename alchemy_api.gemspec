@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.name = %q{alchemy_api}
   s.version = "0.1.2"
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version>='1.3.6'
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version '>= 1.3.6'
   s.authors = ["David Balatero"]
   s.date = %q{2010-11-02}
   s.description = %q{Provides a client API library for AlchemyAPI's awesome NLP services. Allows you to make parallel or serial requests.}
