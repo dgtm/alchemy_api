@@ -1,8 +1,15 @@
+PATH
+  remote: .
+  specs:
+    alchemy_api (0.1.2)
+      json
+      monster_mash
+
 GEM
   remote: http://rubygems.org/
   specs:
-    diff-lcs (1.1.2)
-    json (1.5.3)
+    diff-lcs (1.1.3)
+    json (1.6.1)
     mime-types (1.16)
     monster_mash (0.2.3)
       typhoeus (>= 0.2.4)
@@ -24,7 +31,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  json
-  monster_mash (>= 0.1.1)
-  rspec (>= 1.2.9)
-  typhoeus_spec_cache (>= 0.2.2)
+  alchemy_api!
+  rspec
+  typhoeus_spec_cache
