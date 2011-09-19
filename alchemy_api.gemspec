@@ -13,8 +13,7 @@ Gem::Specification.new do |s|
   s.email = %q{dbalatero@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.markdown",
-     "README.markdown.html"
+     "README.markdown"
   ]
   s.files = [
     ".document",
@@ -40,7 +39,7 @@ Gem::Specification.new do |s|
      "spec/alchemy_api/term_extraction_spec.rb",
      "spec/alchemy_api/text_extraction_spec.rb",
      "spec/alchemy_api_spec.rb",
-     "spec/cache/categorization/get_categorization_from_html/ddc3cf50efe5bd5c2159abfb49121cfa2314ca88.cache",
+     "spec/cache/categorization/get_categorization_from_\/ddc3cf50efe5bd5c2159abfb49121cfa2314ca88.cache",
      "spec/cache/categorization/get_categorization_from_text/8b476a3b532afd2da646b145e9dde07570c27352.cache",
      "spec/cache/categorization/get_categorization_from_url/7536a34e1d54a95d8ee07d2a98036362761e1621.cache",
      "spec/cache/concept_tagging/get_concepts_from_html/7da223513abcfe2fd3d253fff60894829f858667.cache",
